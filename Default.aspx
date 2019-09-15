@@ -11,11 +11,12 @@
 <table>
 <tr>
     <td>
-    <asp:TextBox id="TextArea1" Columns="50" runat="server" BorderStyle="None" Font-Bold="True" >I am Tran Xuan Tung NGUYEN</asp:TextBox>
+    <asp:TextBox id="TextArea1" Columns="50" runat="server" BorderStyle="None" Font-Bold="True" EnableTheming="False" Wrap="False" >Hello, I am Tran Xuan Tung NGUYEN</asp:TextBox>
         </td>
     <td>    <asp:Image ID="Image2" runat="server" ImageUrl="~/1.png" Height="288px" Width="316px" />
 </td>
 <td>
+    
     <asp:DetailsView ID="DetailsView1" runat="server" CellPadding="4" DataSourceID="TranInformation" ForeColor="#333333" GridLines="None" Height="140px" Width="191px" AutoGenerateRows="False" DataKeyNames="FirstName">
                     <AlternatingRowStyle BackColor="White" />
                     <CommandRowStyle BackColor="#D1DDF1" Font-Bold="True" />
@@ -24,9 +25,12 @@
                     <Fields>
                         <asp:BoundField DataField="FirstName" HeaderText="FirstName" ReadOnly="True" SortExpression="FirstName" />
                         <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" />
-                        <asp:BoundField DataField="DOB" HeaderText="DOB" SortExpression="DOB" />
+                        <asp:BoundField DataField="DOB" HeaderText="Date of Birth" SortExpression="DOB" />
                         <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
                         <asp:BoundField DataField="Address" HeaderText="Address" SortExpression="Address" />
+                        <asp:HyperLinkField HeaderImageUrl="~/GithubIcon.png" NavigateUrl="https://github.com/xuantung412" Text="Github" />
+
+
                     </Fields>
                     <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
                     <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
