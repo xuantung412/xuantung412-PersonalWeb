@@ -6,8 +6,9 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title><%: Page.Title %> -Tran Xuan Tung NGUYEN</title>
-
+    <link href="CSSBackground.css" rel="stylesheet" type="text/css" />
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
@@ -59,10 +60,12 @@
             </div>
         </div>
         <div class="container body-content">
+            <link href="CSSTextColor.css" rel="stylesheet" />
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
+
                  <li>Today:
                     <%: DateTime.Now %>
                 </li>

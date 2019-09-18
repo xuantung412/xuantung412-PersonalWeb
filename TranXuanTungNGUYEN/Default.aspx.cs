@@ -13,5 +13,11 @@ namespace TranXuanTungNGUYEN
         {
 
         }
+
+        protected void Github_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("https://github.com/xuantung412");
+        }
+
     }
 }

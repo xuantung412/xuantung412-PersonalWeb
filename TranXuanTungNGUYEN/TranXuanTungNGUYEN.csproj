@@ -119,6 +119,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="CSSBackground.css" />
+    <Content Include="background.png" />
     <Content Include="IT Skill.aspx" />
     <Content Include="App_Data\TranInformation.mdf" />
     <Content Include="App_Data\TranInformation_log.ldf" />
@@ -165,6 +167,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
+    <Content Include="CSSTextColor.css" />
     <Content Include="TouchSreenProject-Detail.aspx" />
     <Content Include="Tran-TouchSceenProject.png" />
     <Content Include="Tran-Image.png" />

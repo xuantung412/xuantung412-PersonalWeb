@@ -1,16 +1,16 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="TranXuanTungNGUYEN._Default" %>
-
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div>
 <table>
 <tr>
     <td>
-    <asp:TextBox id="TextArea1" Columns="50" runat="server" BorderStyle="None" Font-Bold="True" EnableTheming="False" Wrap="False" >Hello, I am Tran Xuan Tung NGUYEN</asp:TextBox>
-        </td>
+        &nbsp;</td>
     <td>    <asp:Image ID="Image2" runat="server" ImageUrl="~/Tran-Image.png" Height="288px" Width="316px" />
 </td>
 <td>
+    
+    
     
     <asp:DetailsView ID="DetailsView1" runat="server" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Height="140px" Width="191px" AutoGenerateRows="False" DataKeyNames="FirstName">
                     <AlternatingRowStyle BackColor="White" />
@@ -18,12 +18,11 @@
                     <EditRowStyle BackColor="#2461BF" />
                     <FieldHeaderStyle BackColor="#DEE8F5" Font-Bold="True" />
                     <Fields>
-                        <asp:BoundField DataField="FirstName" HeaderText="FirstName" ReadOnly="True" SortExpression="FirstName" />
-                        <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" />
-                        <asp:BoundField DataField="DOB" HeaderText="DOB" SortExpression="DOB" />
+                        <asp:BoundField DataField="FirstName" HeaderText="First Name" ReadOnly="True" SortExpression="FirstName" />
+                        <asp:BoundField DataField="LastName" HeaderText="Family Name" SortExpression="LastName" />
+                        <asp:BoundField DataField="DOB" HeaderText="Date of birth" SortExpression="DOB" />
                         <asp:BoundField DataField="Address" HeaderText="Address" SortExpression="Address" />
                         <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
-                        <asp:HyperLinkField HeaderImageUrl="~/GithubIcon.png" NavigateUrl="https://github.com/xuantung412/xuantung412-PersonalWeb" Text="GitHub" />
 
 
                     </Fields>
@@ -32,10 +31,12 @@
                     <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
                     <RowStyle BackColor="#EFF3FB" />
         </asp:DetailsView>
+    <asp:ImageButton ID="Github" runat="server" AlternateText="Github" ImageUrl="~/GithubIcon.png" OnClick="Github_Click" />
     </td>
 <td>        &nbsp;</td>
 </tr>
 </table>
+
             <td>&nbsp;<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TranBasicInfo %>" SelectCommand="SELECT [FirstName], [LastName], [DOB], [Address], [Email] FROM [Table]"></asp:SqlDataSource>
         <p><b>My Story</b></p>
         <p>My parents sent me to Comuting Learning Center when I was 12 years old during my summer vacation.<p>I started coding my favourite game( Wacraft III- Blizzard Entertainment) when I was 13.</p>
