@@ -9,9 +9,6 @@
     <td>    <asp:Image ID="Image2" runat="server" ImageUrl="~/Tran-Image.png" Height="288px" Width="316px" />
 </td>
 <td>
-    
-    
-    
     <asp:DetailsView ID="DetailsView1" runat="server" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Height="140px" Width="191px" AutoGenerateRows="False" DataKeyNames="FirstName">
                     <AlternatingRowStyle BackColor="White" />
                     <CommandRowStyle BackColor="#D1DDF1" Font-Bold="True" />
@@ -33,7 +30,7 @@
         </asp:DetailsView>
     <asp:ImageButton ID="Github" runat="server" AlternateText="Github" ImageUrl="~/GithubIcon.png" OnClick="Github_Click" />
     </td>
-<td>        &nbsp;</td>
+
 </tr>
 </table>
 
